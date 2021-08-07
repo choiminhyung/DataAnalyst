@@ -1,0 +1,19 @@
+from datetime import datetime
+
+date_str = str(20100601)
+
+date = datetime.strptime(date_str, '%Y%m%d')
+date = date.weekday()
+date
+# 0~6까지로 요일 출력되는 것 확인
+
+
+weekday_dict = [ '월','화','수','목','금','토','일']
+weekday_list = [] #데이터프레임에 컬럼으로 추가해주기 위해서 리스트를 생성해줍니다
+
+for date_str in raw['사용일자'] : 
+  date = datestrptime(str(date_str), '%Y%m%d')
+  weekday_index = date.weekday()
+  weekday = weekday_dict[weekday_index]
+  weekday_list.append(weekday)
+  
